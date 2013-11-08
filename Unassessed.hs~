@@ -1,0 +1,17 @@
+module Exercises where
+
+binary :: Int -> String
+binary n
+  | n == 0 = ""
+  | otherwise = binary (div n 2) ++ show (mod n 2)
+
+newBase :: Int -> Int -> String
+newBase n base 
+  | n == 0 = ""
+  | otherwise = newBase (div n base) base ++ show (mod n base) 
+
+--substring :: String -> String -> Bool
+--substring a b 
+  --= or map elem a [b' | ]
+  
+
